@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20170627194018) do
 
   create_table "pokemons", force: :cascade do |t|
     t.string "name"
-    t.boolean "is_cool"
+    t.integer "trainer_id"
   end
 
   create_table "trainers", force: :cascade do |t|

@@ -12,6 +12,8 @@ class Application < Sinatra::Base
   end
 
   post '/bepis' do
+    trainer = Trainer.create(name: params[:name])
+    pokemon = Pokemon.create(name: params[:pokename], trainer_id: trainer.id)
     erb :bepis
   end
 

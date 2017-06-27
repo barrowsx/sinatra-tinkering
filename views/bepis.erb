@@ -1,6 +1,6 @@
 <html>
   <body style="background-color:powderblue;">
-    <% @trainer = Trainer.create(name: params[:bepis]) %>
-    <h1><%= "#{@trainer.name} is the entered text :O" %></h1>
+    <h1><%= params[:name] %>, are you a boy or a girl?</h1>
+    <h1>Also, nice <%= params[:pokename] %></h1>
   </body>
 </html>
