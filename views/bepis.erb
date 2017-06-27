@@ -1,5 +1,6 @@
 <html>
   <body style="background-color:powderblue;">
-    <h1><%= "#{params[:bepis]} is the entered text :O" %></h1>
+    <% @trainer = Trainer.create(name: params[:bepis]) %>
+    <h1><%= "#{@trainer.name} is the entered text :O" %></h1>
   </body>
 </html>
